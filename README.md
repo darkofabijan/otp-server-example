@@ -11,4 +11,6 @@ Start it with `iex -S mix`
 :gen_server.call(pid, {:set_number, 1000})
 
 :gen_server.cast(pid, {:increment_number, 500})
+
+:sys.get_status pid
 </pre></code>
