@@ -23,3 +23,13 @@ Naming a server
 :gen_server.call(:seq, :next_number)
 sys.get_status(:seq)
 ```
+
+Using server with external API
+
+```Elixir
+Sequence.Server.start_link(13)
+
+Sequence.Server.next_number
+Sequence.Server.increment_number(100)
+Sequence.Server.next_number
+```
